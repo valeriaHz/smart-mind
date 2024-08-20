@@ -1,0 +1,55 @@
+
+.audio-icon {
+    font-size: 24px; 
+    color:  rgb(123, 138, 223); 
+    cursor: pointer; 
+    margin-top: 10px; 
+}
+
+audio {
+    display: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px; 
+}
+
+.card {
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-left: 20%;
+}
+
+.card-img-top {
+    max-width: 100%; 
+    height: auto; 
+}
+
+a#antes, a#pasar {
+    padding: 10px 20px; 
+    background-color: #ffcef7; 
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 2em; 
+    font-weight: bold; 
+    text-align: center; 
+    display: inline-block;
+}
+
+a#antes:active, a#pasar:active {
+    background-color: #e4b4dd; 
+}
+
+#antes{
+    margin-right: 80%;
+}

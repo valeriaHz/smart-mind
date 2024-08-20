@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/fondo.jpg');
+    background-size: cover;
+}
+
+
+.palabras-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.palabra-div {
+    width: 80%;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 50px auto;
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.imagen-container {
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-palabra {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.silabas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.silaba {
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255);
+    transition: background-color 0.3s;
+}
+
+.silaba:hover {
+    background-color: #f0f0f0;
+}
+
+a#antes, a#pasar {
+    padding: 10px 20px;  
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 2em; 
+    font-weight: bold; 
+    text-align: center; 
+    display: inline-block;
+}
+
+a#antes{
+    background-color:rgb(212, 164, 235);
+}
+
+a#pasar{
+    background-color:rgb(78, 95, 255);
+}
+
+a#antes:active, a#pasar:active {
+    background-color: #f3b5f8d7; 
+}
+
+#antes{
+    margin-right: 80%;
+}
+
+@media (max-width: 768px) {
+    .palabra-div {
+        width: 80%;
+    }
+
+    .imagen-container {
+        width: 90%; 
+        max-width: 300px;
+    }
+
+    .silaba {
+        padding: 6px 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .palabra-div {
+        width: 95%; 
+    }
+
+    .imagen-container {
+        max-width: 250px; 
+    }
+
+    .silaba {
+        font-size: 14px; 
+    }
+}

@@ -1,0 +1,136 @@
+
+.titulo{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5rem;
+  color: black;
+}
+
+#next{
+  margin: auto;
+  border-color: green;
+  font-size: 2rem;
+  border-radius: 2em;
+}
+
+#antes {
+  margin: auto;
+  margin-right: 70%;
+  border-color: green;
+  border-radius: 2em;
+  font-size: 2rem;
+}
+
+body{
+  background: url(../pasaPalabra/img/fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+p {
+  font: 22pt ;
+  font-family: 'Trebuchet MS';
+  margin: 20px 20px 0px 20px;
+}
+
+#juego {
+  border: 1px solid black;
+  padding: 20px;
+  float: left;
+  margin: 30px 20px;
+}
+
+#juego div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#juego .puzzleSquare {
+  height: 30px;
+  width: 30px;
+  text-transform: uppercase;
+  background-color: white;
+  border: 0;
+  font: 1em sans-serif;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+#juego .selected {
+  background-color: rgb(176, 240, 147);
+}
+
+#juego .found {
+  background-color: rgb(106, 201, 224);
+  color: white;
+}
+
+#juego .solved {
+  background-color: rgba(241, 146, 241, 0.733);
+  color: white;
+}
+
+#juego .complete {
+  background-color: rgb(110, 211, 110);
+}
+
+
+#Palabras {
+  padding-top: 21px;
+}
+
+#Palabras ul {
+  list-style-type: none;
+}
+
+#Palabras li {
+  padding: 3px 0;
+  font: 2em sans-serif;
+  color: white;
+}
+
+#Palabras .wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2rem; 
+  }
+
+  p {
+    font-size: 1.2rem; 
+  }
+
+  #next, #antes {
+    font-size: 1.2rem; 
+    padding: 8px 16px; 
+  }
+
+  #juego .puzzleSquare {
+    font-size: 0.8rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  #next, #antes {
+    margin-right: 0; 
+  }
+
+  #juego {
+    float: none;
+    margin: 10px; 
+  }
+
+  #juego .puzzleSquare {
+    padding: 3px; 
+  }
+
+  #Palabras li {
+    font-size: 0.9rem; 
+  }
+}

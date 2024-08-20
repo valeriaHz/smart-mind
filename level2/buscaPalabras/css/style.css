@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url(../img/fondo1.jpg);
+    background-size: cover;
+}
+
+#imageContainer img {
+    width: 200px;
+    height: auto;    
+    max-height: 300px;
+    display: block; 
+    margin: 100px auto; 
+}
+
+
+.letterBox {
+    display: inline-block;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 8px 12px;
+    border: 1px solid #017281;
+    border-radius: 5px;
+    background-color: rgb(158, 230, 243);
+    transition: background-color 0.3s;
+    margin: 2px;
+    font-size: 24px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+a#antes, a#pasar {
+    padding: 10px 20px; 
+    background-color: rgba(165, 242, 255, 0.404); 
+    color: rgb(56, 55, 55); 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 2em; 
+    font-weight: bold; 
+    text-align: center; 
+    display: inline-block;
+}
+
+a#antes:active, a#pasar:active {
+    background-color: #4279b4; 
+}
+
+#antes{
+    margin-right: 80%;
+}
